@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="public/icons/coding.png" />
+    <link rel="icon" href="public/coding.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Project</title>
     <link
@@ -23,15 +23,15 @@
     </style>
   </head>
   <body class="h-[2000vh]">
-    <main class="bg-neutral-950 h-screen">
+    <main class="">
       <header>
         <nav
-          class="text-slate-50 bg-neutral-950 flex justify-between items-center fixed w-full px-5 md:px-16 lg:px-20 py-2"
+          class="text-slate-50 bg-neutral-950 flex justify-between items-center z-40 fixed w-full px-5 md:px-16 lg:px-20 py-2"
         >
           <div
             class="pointer-events-none flex justify-center items-center gap-3"
           >
-            <img src="./public/icons/coding.png" class="size-8" alt="" />
+            <img src="./public/coding.png" class="size-8" alt="" />
             <h1 class="text-3xl font-bold">AK</h1>
           </div>
 
@@ -58,7 +58,10 @@
             >
           </div>
 
-          <div id="sideBarBtn" class="flex lg:hidden hover:text-sky-500 active:scale-90 duration-200">
+          <div
+            id="sideBarBtn"
+            class="flex lg:hidden hover:text-sky-500 active:scale-90 duration-200"
+          >
             <button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -80,10 +83,16 @@
       </header>
 
       <section>
-        <div id="sideBar" class="bg-neutral-950 w-40 sm:w-52 h-screen fixed translate-x-full right-0 lg:hidden">
+        <div
+          id="sideBar"
+          class="bg-neutral-950 w-40 sm:w-52 h-screen z-50 fixed translate-x-full right-0 lg:hidden"
+        >
           <div class="flex flex-col gap-5 p-3 text-slate-50">
             <div class="">
-              <button id="sideBarCloseBtn" class="rounded-lg hover:bg-neutral-900 active:scale-95 duration-200">
+              <button
+                id="sideBarCloseBtn"
+                class="rounded-lg hover:bg-neutral-900 active:scale-95 duration-200"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -126,67 +135,61 @@
 
       <section id="home">
         <div
-          class="flex flex-col-reverse justify-center gap-5 px-5 sm:flex-row sm:items-center md:justify-between md:px-16 lg:flex-row lg:justify-between lg:items-center lg:gap-10 h-screen lg:px-20"
+          class="bg-neutral-950 flex flex-col-reverse justify-center gap-5 px-5 sm:flex-row sm:items-center md:justify-between md:px-16 lg:flex-row lg:justify-between lg:items-center lg:gap-10 h-screen lg:px-20"
         >
           <div class="">
             <div
               class="flex justify-center items-center sm:justify-start lg:justify-start gap-2 pl-1 mb-3 w-full"
             >
-              <div class="w-16 lg:w-20 h-[1px] bg-[#0ea5e970]"></div>
-              <h1 class="text-[#0ea5e970]">INTRODUCING</h1>
+              <div class="w-10 sm:w-16 lg:w-20 h-[1px] bg-[#0ea5e970]"></div>
+              <h1 class="text-[#0ea5e970] text-sm md:text-lg lg:text-xl">INTRODUCING</h1>
               <div
-                class="w-16 sm:hidden lg:hidden lg:w-20 h-[1px] bg-[#0ea5e970]"
+                class="w-10 sm:w-16 sm:hidden lg:hidden lg:w-20 h-[1px] bg-[#0ea5e970]"
               ></div>
             </div>
 
             <h1
-              class="text-slate-50 font-bold text-3xl text-center sm:text-start md:text-4xl lg:text-6xl lg:text-start text-nowrap mb-5"
+              class="text-slate-50 font-bold text-center text-2xl sm:tetxt-3xl sm:text-start md:text-4xl lg:text-6xl lg:text-start text-nowrap mb-5"
             >
               I'M <br />
               AUNG KO THET
             </h1>
 
             <p
-              class="text-slate-500 text-center md:text-start text-nowrap mb-5"
+              class="text-slate-500 text-center text-xs sm:text-sm md:text-start lg:text-lg text-nowrap mb-5"
             >
               Better Design for your Digital Prodect.
             </p>
-
-            <!-- <button
-              class="text-slate-50 text-lg font-bold border-2 border-sky-500 rounded-lg active:scale-95 duration-200 px-3 py-2"
-            >
-              VIEW P0RTFOLIO
-            </button> -->
 
             <div class="flex justify-center sm:justify-start gap-3">
               <a
                 href="https://www.facebook.com"
                 target="_blank"
-                class="bg-neutral-950 text-slate-50 rounded-full shadow shadow-sky-500 size-8 hover:text-sky-500 active:scale-95 duration-200 flex justify-center items-center"
+                class="bg-neutral-950 text-slate-50 rounded-full shadow shadow-sky-500 size-7 sm:size-8 hover:text-sky-500 active:scale-95 duration-200 flex justify-center items-center"
                 ><i class="fa-brands fa-facebook"></i
               ></a>
               <a
                 href="https://www.instagram.com"
                 target="_blank"
-                class="bg-neutral-950 text-slate-50 rounded-full shadow shadow-sky-500 size-8 hover:text-sky-500 active:scale-95 duration-200 flex justify-center items-center"
+                class="bg-neutral-950 text-slate-50 rounded-full shadow shadow-sky-500 size-7 sm:size-8 hover:text-sky-500 active:scale-95 duration-200 flex justify-center items-center"
                 ><i class="fa-brands fa-instagram"></i
               ></a>
               <a
                 href="https://www.youtube.com"
                 target="_blank"
-                class="bg-neutral-950 text-slate-50 rounded-full shadow shadow-sky-500 size-8 hover:text-sky-500 active:scale-95 duration-200 flex justify-center items-center"
+                class="bg-neutral-950 text-slate-50 rounded-full shadow shadow-sky-500 size-7 sm:size-8 hover:text-sky-500 active:scale-95 duration-200 flex justify-center items-center"
                 ><i class="fa-brands fa-youtube"></i
               ></a>
               <a
                 href="https://www.youtube.com"
                 target="_blank"
-                class="bg-neutral-950 text-slate-50 rounded-full shadow shadow-sky-500 size-8 hover:text-sky-500 active:scale-95 duration-200 flex justify-center items-center"
+                class="bg-neutral-950 text-slate-50 rounded-full shadow shadow-sky-500 size-7 sm:size-8 hover:text-sky-500 active:scale-95 duration-200 flex justify-center items-center"
                 ><i class="fa-brands fa-discord"></i
               ></a>
               <a
                 href="https://www.twitter.com/"
                 target="_blank"
-                class="bg-neutral-950 text-slate-50 rounded-full shadow shadow-sky-500 size-8 hover:text-sky-500 active:scale-95 duration-200 flex justify-center items-center"
+                class="bg-neutral-950 text-slate-50 rounded-full shadow shadow-sky-500 size-7 sm:size-8 hover:text-sky-500 active:scale-95 duration-200 flex justify-center items-center"
                 ><i class="fa-brands fa-twitter"></i
               ></a>
             </div>
@@ -195,13 +198,50 @@
           <div
             class="flex justify-center w-full size-60 md:size-80 lg:justify-center lg:w-full lg:size-96"
           >
-            <img src="./public/Hand coding-bro.svg" alt="" />
+            <img src="./src/images/Hand coding-bro.svg" alt="" />
           </div>
         </div>
       </section>
 
       <section id="about">
-        <div class="bg-neutral-900 min-h-screen"></div>
+        <div class="bg-neutral-900 px-5 md:px-16 lg:px-20 flex flex-col gap-3 lg:gap-5 py-14">
+          <p class="font-bold text-2xl md:text-3xl lg:text-4xl text-slate-50">About</p>
+          <div class="flex flex-wrap gap-3 lg:gap-14">
+            <div class="bg-blue-500 size-28 sm:size-32 lg:size-52  flex flex-col justify-center items-center gap-2 lg:gap-5">
+              <div class="size-10 sm:size-12">
+                <img src="./src/images/html-icon.png" alt="" />
+              </div>
+              <p class="sm:text-sm md:text-lg lg:text-2xl font-bold text-nowrap text-slate-50">Html 5</p>
+            </div>
+
+            <div class="bg-blue-500 size-28 sm:size-32 lg:size-52  flex flex-col justify-center items-center gap-2 lg:gap-5">
+              <div class="size-10 sm:size-12">
+                <img src="./src/images/css-icon.png" alt="" />
+              </div>
+              <p class="sm:text-sm md:text-lg lg:text-2xl font-bold text-nowrap text-slate-50">Css 3</p>
+            </div>
+
+            <div class="bg-blue-500 size-28 sm:size-32 lg:size-52  flex flex-col justify-center items-center gap-2 lg:gap-5">
+              <div class="size-10 sm:size-12">
+                <img src="./src/images/html-icon.png" alt="" />
+              </div>
+              <p class="sm:text-sm md:text-lg lg:text-2xl font-bold text-nowrap text-slate-50">Java Script</p>
+            </div>
+
+            <div class="bg-blue-500 size-28 sm:size-32 lg:size-52  flex flex-col justify-center items-center gap-2 lg:gap-5">
+              <div class="size-10 sm:size-12">
+                <img src="./src/images/html-icon.png" alt="" />
+              </div>
+              <p class="sm:text-sm md:text-lg lg:text-2xl font-bold text-nowrap text-slate-50">React</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="project">
+        <div class="bg-neutral-950 h-screen">
+
+        </div>
       </section>
 
       <footer></footer>
